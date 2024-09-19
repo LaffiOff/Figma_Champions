@@ -9,10 +9,15 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        var buttonSkip: Button = findViewById(R.id.button)
+        val buttonSkip: Button = findViewById(R.id.button)
         buttonSkip.setOnClickListener{
-            var intent1 = Intent(this, MainActivity::class.java)
+            val intent1 = Intent(this, MainActivity::class.java)
             startActivity(intent1)
+            val buttonNext: Button = findViewById(R.id.button2)
+            buttonNext.setOnClickListener {
+                val intent2 = Intent(this, MainActivity3::class.java)
+                startActivity(intent2)
+            }
         }
     }
 }

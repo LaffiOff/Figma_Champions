@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         var TextLogin: TextView = findViewById(R.id.textView6)
         TextLogin.setOnClickListener {
-            var intent1 = Intent(this, MainActivity::class.java)
+            var intent1 = Intent(this, MainActivity2::class.java)
             startActivity(intent1)
         }
     }
